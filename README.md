@@ -10,7 +10,7 @@
 all works in src folder
 
 ## Usage
-Run `git clone https://github.com/Fedorrychkov/gulp-sass-simple-boilerplate`, open folder `cd gulp-sass-simple-boilerplate` and run `npm i`.<br>
+Run `git clone https://github.com/Senthu3/challenge.git`, open folder `cd challenge` and run `npm i`.<br>
 Run `npm start` for start development.
 
 Node Version 10.10.0
