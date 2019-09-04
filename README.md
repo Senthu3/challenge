@@ -1,6 +1,4 @@
-# gulp-sass-simple-boilerplate
-Boilerplate for simple work
-
+# Challenge
 * use sass (scss)
 * use html
 * img minify
