@@ -1,0 +1,49 @@
+@import '_variables.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+html {
+    font-size:100%;
+}
+
+body {
+    color: $color-black;
+    min-height: 100vh;
+    font-family: "arial",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    background:$color-grey;
+  }
+
+ul, ol, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+ul li, ol li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.max-width{
+    max-width: 100%;
+    width: 100%;
+}
+

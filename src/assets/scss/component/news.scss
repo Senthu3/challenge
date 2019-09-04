@@ -1,0 +1,232 @@
+.news{
+    position: relative;
+    top: -72px;
+    z-index: -1;
+    .newsheadlines{
+        height: 360px;
+        padding: 0px;
+        display: flex;
+        align-items: flex-end;
+        .newsitems{
+            display: flex;
+            align-items: flex-end;
+            &.newsheadlines--left{
+                background: $color-grey;
+                height: 100%;
+            }
+            &.newsheadlines--right{
+                background: $color-black;
+                height: 100%;
+                .news-content{
+                    p{
+                        color: $color-white;
+                    }
+                }
+            }
+            .news--content{
+                span{
+                    h6{
+                        display: inline-block;
+                        padding-left: 8px;
+                        color: $color-text-grey;
+                        font-weight: bold;
+                        font-size: 15px;
+                        text-transform: uppercase;
+                    }
+                }
+                h3{
+                    color: $theme-color;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                }
+                p{
+                    color: $color-text-grey;
+                    font-size: 15px;
+                    line-height: 1.5em;
+                    height: 3em;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .news--geoloction{
+        padding-left: 0;
+        padding-right: 0;
+        .news--geo{
+            background: url('../img/17-mai-headlines.png') no-repeat center;
+            height: 360px;
+            display: flex;
+            align-items: flex-end;
+            padding-left: 40px;
+            background-size: cover!important;
+            .geo--content{
+                h1{
+                font-size: 50px;
+                color: $color-black;
+                text-transform: uppercase;
+                }
+                h2{
+                    font-size: 30px;
+                    color: $theme-color;
+                    text-transform: uppercase;
+                }
+                h3{
+                    font-size: 20px;
+                    color: $color-black;
+                    text-transform: uppercase;
+                }
+                p{
+                    width: 75%;
+                    color: $color-text-grey;
+                    font-size: 15px;
+                    line-height: 1.5em;
+                    height: 3em;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+    .shipping{
+        padding: 0;
+        display: flex;
+    }
+    .news--geoloction2{
+        .news--geo{
+            background: url('../img/03-oct-headlines.png') no-repeat center;
+            height: auto;
+        }
+        img{
+            max-width: 100%;
+        }
+        .news--image{
+            padding: 0;
+            display: inline-block;
+            &.right-item{
+                float: right;
+            }
+        }
+    }
+    .last-row{
+        position: relative;
+        top: -8px;
+        .column-1{
+            img{
+                height: 100%;
+            }
+        }
+        .column-1{
+            .content-wrapper{
+                position:absolute;
+                top: 50%;
+                color:$color-white;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                img{
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+        .column-2{
+            background: $color-black;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            .content-wrapper{
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                flex-direction: column;
+                img{
+                    margin: 0 auto;
+                }
+                h2{
+                    color: $color-white;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+.no-padding{
+    padding: 0;
+}
+
+@media (min-width:1400px) {
+    .news{
+        .news--geoloction{
+            .news--geo{
+                height: 280px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width:1200px) {
+    .news{
+        h1{
+           font-size: 30px!important;
+        }
+        h2{
+            font-size: 24px!important;
+        }
+
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    .news {
+        .news--geoloction2{
+            .news--geo{
+                //height: 150px;
+                position: relative;
+                top: -8px;
+                background-position: 100% 100%;
+            }
+        }
+        h1{
+            font-size: 20px!important;
+         }
+         h2{
+             font-size: 18px!important;
+         }
+    }
+}
+
+@media (max-width: 768px){
+    .news {
+        .news--geoloction2{
+            .news--geo{
+                padding-top: 20px;
+                padding-left: 40px;
+            }
+        }
+        .last-row{
+            .column-1{
+                height: 200px;
+            }
+            .column-2{
+                height: 200px;
+            }
+        }
+    } 
+}
+
+@media (max-width: 640px){
+    .news {
+        .news--geoloction2{
+            h1{
+            font-size: 20px!important;
+            }
+            h2{
+                font-size: 18px!important;
+            }
+        } 
+    }
+
+}

@@ -1,0 +1,129 @@
+.teams{
+    header{
+        height: 250px;
+        background-color: $color-black;
+        padding-top: 80px;
+    }
+    h1,h4{
+        text-align: center;
+        color: $color-white;
+    }
+    h4{
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 40px;
+            margin-left: -120px;
+            bottom: 0;
+            width: 240px;
+            border-bottom: 1px solid $color-white;
+        }
+    }
+    .box-wrapper{
+        /*display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;*/
+        .box{
+            flex: 1 0 18%; /* The important bit. This percentage decides your columns. 
+         The percent can be px. It just represents your minimum starting width.
+          */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &.flex-column {
+                max-width: 280px;
+            }
+        }
+        display: block;
+        margin: auto;
+        max-width: 1400px;
+        padding-left: 0;
+        padding-right: 0;
+        position: relative;
+        z-index: 45;
+        .item-list{
+            line-height: 0;
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+            ul{
+                display: inline-block;
+                margin: 0 auto;
+                padding: 0;
+                li{
+                    min-width: 220px;
+                    width: calc(100%/5);
+                    list-style: none;
+                    display: block;
+                    float: left;
+                    margin: 0;
+                    overflow: hidden;
+                    padding: 0;
+                    img{
+                        max-width: 100%;
+                    }
+                    &.imageOverlay{
+                        img{
+                            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                            filter: grayscale(100%);
+                        }
+                    }
+                }
+                .user-details{
+                    display: flex;
+                    background: $color-grey;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding-left: 20px;
+                    justify-content: flex-end;
+                    flex-direction: column;
+                    h2{
+                        display: block;
+                        width: 100%;
+                    }
+                    p{
+                        font-size: 15px;
+                        line-height: 22px;
+                    }
+                } 
+            }
+        }
+    }
+}
+
+@media (min-width:992px) and (max-width: 1200px){
+    .teams .box-wrapper .item-list ul li{
+        width: calc(100%/4)!important; 
+    }
+}
+
+@media (min-width:768px) and (max-width: 991px){
+    .teams .box-wrapper .item-list ul li{
+        width: calc(100%/3)!important; 
+    }
+}
+
+@media (max-width:768px){
+    .teams .box-wrapper .item-list ul li{
+        min-width: 180px;
+        width: calc(100%/3)!important; 
+    }
+    .teams header {
+        height: 180px;
+        background-color: $color-black;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width:560px){
+    .teams .box-wrapper .item-list ul li{
+        min-width: 160px;
+        width: calc(100%/2)!important; 
+    }
+    .teams .box-wrapper .item-list ul .user-details h2{
+        line-height: 30px;
+    }
+}
