@@ -955,6 +955,7 @@ a {
 .nav > .nav--links > a {
   display: inline-block;
   padding: 0px 10px;
+  float: left;
   text-decoration: none;
   color: #000000;
   background-color: #ffffff;
@@ -1106,7 +1107,7 @@ a {
   }
 }
 
-@media (min-width: 568px) and (max-width: 768px) {
+@media (min-width: 568px) and (max-width: 767px) {
   .banner .row .banner--text {
     height: 20%;
     padding-top: 20px;
@@ -1119,6 +1120,15 @@ a {
     height: 50%;
     padding-top: 20px;
     background: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@media (max-width: 320px) {
+  .banner .row .banner--text {
+    height: 70%;
+    padding-top: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    top: 20px;
   }
 }
 
@@ -1743,7 +1753,7 @@ a {
           transform: skew(0deg, 6deg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .formsponsor .formsponsor--wrapper:before, .formsponsor .formsponsor--wrapper:after {
     display: none;
   }
@@ -1851,7 +1861,7 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .footer {
     height: 120px;
     padding: 20px 0 20px;

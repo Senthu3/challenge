@@ -27,9 +27,7 @@ module.exports = {
     },
     plugins: [
         new webpack.LoaderOptionsPlugin({
-            debug: true,
-            $: "jquery",
-            jQuery: "jquery"
+            debug: true
         })
     ]
 };
