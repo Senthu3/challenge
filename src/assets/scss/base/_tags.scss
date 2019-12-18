@@ -1,0 +1,49 @@
+/**
+ * Any Typography and bare tag styles
+ *
+ * @author Senthil Kumar Mukkandi <uv.visitsenthil@gmail.com>
+ */
+
+a:hover { text-decoration: none; }
+
+ul {
+    list-style: disc outside;
+    padding-left: $base-font-size;
+}
+
+ol {
+    list-style: decimal outside;
+    padding-left: $base-font-size * 1.2;
+}
+
+th, caption {
+    font-size: $small-size;
+}
+
+label {
+    cursor: pointer;
+}
+
+section, article, aside {
+    display: block;
+}
+
+sup, sub {
+    font-size: 60%;
+}
+
+sup {
+    vertical-align: super;
+}
+
+sub {
+    vertical-align: sub;
+}
+
+code {
+    font-family: $code-font;
+}
+
+img {
+    max-width: 100%;
+}

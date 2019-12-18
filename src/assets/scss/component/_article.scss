@@ -1,0 +1,30 @@
+article{
+    padding: 12.0rem 0 0;
+    text-align: center;
+    background: $white;
+    hr{
+        width: 25%;
+    }
+    .content__column{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        text-align: left;
+        padding: 6.0rem 17.6rem 0 17.6rem;
+        .column1{
+            padding-right: 2.0rem;
+        }
+        .column2{
+            padding-left: 2.0rem;
+        }
+        p{
+            padding-bottom: 3.2rem;
+            color:$grey-72;
+        }
+    }
+    footer{
+        padding: 0;
+        position: relative;
+        top: -80px;
+        background: $white;
+    }
+}

@@ -1,0 +1,25 @@
+/* Start of Banner */
+.banner{
+    position: relative;
+    z-index: 1;
+    .banner__content{
+        position: absolute;
+        right: 48px;
+        top: 168px;
+        text-align: center;
+        width: 38%;
+        font-weight: bold;
+        h1{
+            color: $red;
+            font-size: 6.4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 2rem;
+            text-transform: uppercase;
+            line-height: 1.5;
+        }
+    }
+}
+/* End of Banner */

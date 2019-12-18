@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'loop';
+  src:  url('loop.eot?h49s0b');
+  src:  url('loop.eot?h49s0b#iefix') format('embedded-opentype'),
+    url('loop.ttf?h49s0b') format('truetype'),
+    url('loop.woff?h49s0b') format('woff'),
+    url('loop.svg?h49s0b#loop') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'loop' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-calendar:before {
+  content: "\e901";
+}

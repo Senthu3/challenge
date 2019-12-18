@@ -1,379 +1,299 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
-    <title>Simple Gulp Sass Boilerplate</title>
+    <title>Loop Challenge</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Simple Gulp Sass Boilerplate" />
-    <link href="assets/css/app.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/fonts/font-icon.css">
 </head>
 
 
-<body>
-    <section class="base">
-         <header class="container no-padding">
-        <div class="nav">
-            <input type="checkbox" id="nav--check">
-            <div class="nav--links">
-                <a href="#" target="_blank">About us</a>
-                <a href="#" target="_blank">Gallery</a>
-                <a href="#" target="_blank">Crew</a>
-                <a href="#" target="_blank">Kontakt</a>
+<body id="js-wrapper">
+    <div class="container">
+         <!-- Header
+==================================== -->
+
+<header>
+    <div class="header__toggle" id="js-header--toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+    <nav id="js-header--nav" aria-label="site">
+        <a class="nav__link" href="#">About Us</a>
+        <a class="nav__link" href="#">gallery</a>
+        <a class="nav__link" href="#">crew</a>
+        <a class="nav__link" href="#">kontakt</a>
+    </nav>
+    <span class="header__image">
+        <img src="assets/images/logo-flag.png" alt="logo">
+    </span>
+</header>
+
+<!-- End of Header
+==================================== --> <!-- Main Banner
+==================================== -->
+
+<section class="banner" role="banner">
+    <div class="banner__content">
+        <h1>Lorem ipsum <br> proin gravi</h1>
+        <p>Lorem ipsum. proin gravida nibh vel velit Auctor aliquet. Aenean sollicitudin, lorem</p>
+    </div>
+    <img src="assets/images/banner.png" alt="Lorem ipsum proin gravi" />
+</section>
+
+<!-- End of Main Banner
+==================================== --> <!-- News
+==================================== -->
+
+<section class="news">
+    <div class="block1">
+        <div class="block1__left">
+            <div class="block1__left1 headlines__content">
+                <span class="time"><span class="icon icon-calendar"></span>23 MAI 2014</span>
+                <p class="block1__headline">News Headlines</p>
+                <p>Lorem Ipsum. Proin gravida nibh veit auctor aliquet.Aenean sollicitudin</p>
             </div>
-            <div class="nav--btn">
-                <label for="nav--check">
-                <span></span>
-                <span></span>
-                <span></span>
-                </label>
+            <div class="block1__left2 headlines__content">
+                <span><span class="icon icon-calendar"></span> 23 MAI 2014</span>
+                <p class="block1__headline">News Headlines</p>
+                <p>Lorem Ipsum. Proin gravida nibh veit auctor aliquet.Aenean sollicitudin</p>
             </div>
-            <div class="nav--header">
-                <div class="nav--title">
-                <img src="assets/img/logo-flag.png">
+        </div>
+        <div class="block1__right headlines__content no-padding">
+            <div class="hc__wrapper">
+                <h2>17 MAI</h2>
+                <h3>Headline Beitrag 2014</h3>
+                <h4>subtitle</h4>
+                <p>Lorem ipsum. Proin gravida nibh vei veit auctor aliquet Aenean sollicitudin, lorem quis bibendum auctor</p>
+            </div>
+        </div>
+    </div>
+    <div class="block2">
+        <div class="block2__left">
+            <img src="assets/images/shipping.png" alt="shipping" />
+        </div>
+        <div class="block2__right">
+            <div class="block2__top headlines__content no-padding">
+                <div class="hc__wrapper">
+                    <h2>17 MAI</h2>
+                    <h3>Headline Beitrag 2014</h3>
+                    <h4>subtitle</h4>
+                    <p>Lorem ipsum. Proin gravida nibh vei veit auctor aliquet Aenean sollicitudin, lorem quis bibendum auctor</p>
+                </div>
+            </div>
+            <div class="block2__bottom">
+                <div class="bottom__left">
+                    <img src="assets/images/flag.png" alt="flag" />
+                </div>
+                <div class="bottom__right">
+                    <img src="assets/images/flag-ship.png" alt="flag-ship" />
                 </div>
             </div>
         </div>
-</header> <!--
-Main Banner
-==================================== -->
-
-<section id="banner" class="banner">
-    <div class="container no-padding">
-        <div class="row">
-            <div class="col-md-12 no-padding">
-                <div class="col-md-4 banner--text">
-                    <h1>Lorem ipsum proin gravi</h1>
-                    <h3>Lorem ipsum. proin gravida nibh vel velit auctor aliquet. aenean sollicitudin, lorem</h3>
-                </div>
-                <img class="max-width" src="assets/img/banner.png"/>
-                <!--h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> Brandi</span>!</h2>
-                <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">/creative</span> one page template.</h3>
-                <p data-wow-duration="1000ms" class="wow slideInRight animated">We are a team of professionals</p-->
+    </div>
+    <div class="block3">
+        <div class="block3__left">
+            <img src="assets/images/blinder.png" alt="blinder">
+            <div class="center-text">
+                <span class="icon icon-calendar"></span>
+                <span class="center-text__heading"><br>News+<br>Bilder</span>
+            </div>
+        </div>
+        <div class="block3__right">
+            <div class="center-text">
+                <span class="icon icon-calendar"></span>
+                <span class="center-text__heading"><br>SegelTeam<br>Termine 2014</span>
             </div>
         </div>
     </div>
 </section>
 
-<!--
-End Main Banner
-==================================== --> <!--
-Main Banner
+<!-- End of News
+==================================== --> <!-- Article
+==================================== -->
+<article>
+    <h2>Headline - Lorem ipsum </h2>
+    <h4>subtitle lorem ipsum</h4>
+    <hr>
+    <div class="content__column">
+        <div class="column1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        </div>
+        <div class="column2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas</p>
+            <p>sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        </div>
+    </div>
+    <footer>
+        <img src="assets/images/headline-footer.png" alt="article-footer" />
+    </footer>
+</article>
+
+<!-- End of Article
+==================================== --> <!-- Team
+==================================== -->
+<section class="team">
+    <h2>Unser Team</h2>
+    <h4>Subtitles von unserem Team</h4>
+    <hr>
+    <ul id="list">
+        <li class="list__item js-list--item">
+            <img class="imageOverlay" alt="profile" src="assets/images/team-member-1.png" />
+            <div class="user-details">
+                <h2>Max Mustermann</h2>
+                <p>A smooth sea never made a skilled sailor</p>
+            </div>
+        </li>
+        <li class="list__item js-list--item">
+            <img class="imageOverlay" alt="profile" src="assets/images/team-member-1.png" />
+            <div class="user-details">
+                <h2>Max Mustermann</h2>
+                <p>A smooth sea never made a skilled sailor</p>
+            </div>
+        </li>
+        <li class="list__item js-list--item">
+            <img class="imageOverlay" alt="profile" src="assets/images/team-member-1.png" />
+            <div class="user-details">
+                <h2>Max Mustermann</h2>
+                <p>A smooth sea never made a skilled sailor</p>
+            </div>
+        </li>
+        <li class="list__item js-list--item">
+            <img class="imageOverlay" alt="profile" src="assets/images/team-member-1.png" />
+            <div class="user-details">
+                <h2>Max Mustermann</h2>
+                <p>A smooth sea never made a skilled sailor</p>
+            </div>
+        </li>
+        <li class="list__item js-list--item">
+            <img class="imageOverlay" alt="profile" src="assets/images/team-member-1.png" />
+            <div class="user-details">
+                <h2>Max Mustermann</h2>
+                <p>A smooth sea never made a skilled sailor</p>
+            </div>
+        </li>
+        <li class="list__item js-list--item">
+            <img class="imageOverlay" alt="profile" src="assets/images/team-member-1.png" />
+            <div class="user-details">
+                <h2>Max Mustermann</h2>
+                <p>A smooth sea never made a skilled sailor</p>
+            </div>
+        </li>
+        <li class="list__item js-list--item">
+            <img class="imageOverlay" alt="profile" src="assets/images/team-member-1.png" />
+            <div class="user-details">
+                <h2>Max Mustermann</h2>
+                <p>A smooth sea never made a skilled sailor</p>
+            </div>
+        </li>
+        <li class="list__item js-list--item">
+            <img class="imageOverlay" alt="profile" src="assets/images/team-member-1.png" />
+            <div class="user-details">
+                <h2>Max Mustermann</h2>
+                <p>A smooth sea never made a skilled sailor</p>
+            </div>
+        </li>
+        <li class="list__item js-list--item">
+            <img class="imageOverlay" alt="profile" src="assets/images/team-member-1.png" />
+            <div class="user-details">
+                <h2>Max Mustermann</h2>
+                <p>A smooth sea never made a skilled sailor</p>
+            </div>
+        </li>
+        <li class="list__item js-list--item">
+            <img class="imageOverlay" alt="profile" src="assets/images/team-member-1.png" />
+            <div class="user-details">
+                <h2>Max Mustermann</h2>
+                <p>A smooth sea never made a skilled sailor</p>
+            </div>
+        </li>
+        <li class="list__item js-list--item">
+            <img class="imageOverlay" alt="profile" src="assets/images/team-member-1.png" />
+            <div class="user-details">
+                <h2>Max Mustermann</h2>
+                <p>A smooth sea never made a skilled sailor</p>
+            </div>
+        </li>
+        <li class="list__item js-list--item">
+            <img class="imageOverlay" alt="profile" src="assets/images/team-member-1.png" />
+            <div class="user-details">
+                <h2>Max Mustermann</h2>
+                <p>A smooth sea never made a skilled sailor</p>
+            </div>
+        </li>
+        <li class="list__item js-list--item">
+            <img class="imageOverlay" alt="profile" src="assets/images/team-member-1.png" />
+            <div class="user-details">
+                <h2>Max Mustermann</h2>
+                <p>A smooth sea never made a skilled sailor</p>
+            </div>
+        </li>
+        <li class="list__item js-list--item">
+            <img class="imageOverlay" alt="profile" src="assets/images/team-member-1.png" />
+            <div class="user-details">
+                <h2>Max Mustermann</h2>
+                <p>A smooth sea never made a skilled sailor</p>
+            </div>
+        </li>
+        <li class="list__item js-list--item">
+            <img class="imageOverlay" alt="profile" src="assets/images/team-member-1.png" />
+            <div class="user-details">
+                <h2>Max Mustermann</h2>
+                <p>A smooth sea never made a skilled sailor</p>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<!-- End of Team
+==================================== --> <!-- Contact and sponsor
 ==================================== -->
 
-<section id="news" class="news">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 newsheadlines">
-                    <div class="col-md-6 newsheadlines--left newsitems">
-                        <div class="news-content">
-                            <span>
-                                <img src="assets/img/calendar.png"/>
-                                <h6>23 MAI 2014</h6>
-                            </span>
-                            <h3>News Headlines</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 newsheadlines--right newsitems">
-                        <div class="news-content">
-                            <span>
-                                <img src="assets/img/calendar.png"/>
-                                <h6>23 MAI 2014</h6>
-                            </span>
-                            <h3>News Headlines</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 news--geoloction">
-                    <div class="news--geo">
-                        <div class="geo--content">
-                            <h1>17 MAI</h1>
-                            <h2>Headline beitrag 2014</h2>
-                            <h3>Subtitle</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 shipping">
-                    <img class="max-width" src="assets/img/shipping.png"/>
-                </div>
-                <div class="col-sm-6 news--geoloction news--geoloction2 ">
-                    <div class="news--geo">
-                        <div class="geo--content">
-                            <h1>17 MAI</h1>
-                            <h2>Headline beitrag 2014</h2>
-                            <h3>Subtitle</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-6 news--image">
-                        <img class="max-width" src="assets/img/flag.png"/>
-                    </div>
-                    <div class="col-sm-6 col-6 news--image right-item">
-                        <img class="max-width" src="assets/img/flag-ship.png"/>
-                    </div>
-                </div>
-            </div>
-            <div class="row last-row">
-                <div class="col-md-6 no-padding column-1">
-                    <img class="max-width" src="assets/img/blinder.png"/>
-                    <div class="blinder-content">
-                            <div class="content-wrapper">
-                                <img src="assets/img/blinder-icon.png">
-                                <h2>NEWS+</h2>
-                                <h2>BLIDER</h2>
-                            </div>
-                    </div>
-                </div>
-                <div class="col-md-6 no-padding column-2">
-                    <div class="content-wrapper">
-                        <img src="assets/img/calendar.png">
-                        <h2>SEGELTEAM</h2>
-                        <h2>TERMINE 2014</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!--
-    End Main Banner
-    ==================================== -->
- <section id="article" class="article">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 article--wrapper">
-                <h1>Headline - Lorem Ipsum</h1>
-                <h4>Subtitle Loren ipsum</h4>
-                <div class="col-md-6 article--leftcontent">
-                    <article>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non nisi. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Vel facilisis volutpat est velit egestas. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum. Augue eget arcu dictum varius duis at consectetur lorem. Congue nisi vitae suscipit tellus. Id donec ultrices tincidunt arcu non. Nunc faucibus a pellentesque sit amet. Massa tincidunt dui ut ornare lectus sit amet. Nisl nisi scelerisque eu ultrices. Auctor eu augue ut lectus arcu. Ultrices vitae auctor eu augue ut lectus arcu. Tristique senectus et netus et. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor.
-                        Vitae justo eget magna fermentum iaculis. Tortor condimentum lacinia quis vel eros donec ac odio. Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique. At auctor urna nunc id cursus metus. Lacus vel facilisis volutpat est velit. Semper quis lectus nulla at volutpat diam ut venenatis tellus. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Id ornare arcu odio ut sem nulla pharetra. Mi proin sed libero enim sed faucibus turpis in. A diam maecenas sed enim ut sem. Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus.
-                    </article>
-                </div>
-                <div class="col-md-6 article--rightcontent">
-                    <article>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non nisi. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet commodo. Vel facilisis volutpat est velit egestas. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum. Augue eget arcu dictum varius duis at consectetur lorem. Congue nisi vitae suscipit tellus. Id donec ultrices tincidunt arcu non. Nunc faucibus a pellentesque sit amet. Massa tincidunt dui ut ornare lectus sit amet. Nisl nisi scelerisque eu ultrices. Auctor eu augue ut lectus arcu. Ultrices vitae auctor eu augue ut lectus arcu. Tristique senectus et netus et. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor.
-                        Vitae justo eget magna fermentum iaculis. Tortor condimentum lacinia quis vel eros donec ac odio. Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique. At auctor urna nunc id cursus metus. Lacus vel facilisis volutpat est velit. Semper quis lectus nulla at volutpat diam ut venenatis tellus. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Id ornare arcu odio ut sem nulla pharetra. Mi proin sed libero enim sed faucibus turpis in. A diam maecenas sed enim ut sem. Amet luctus venenatis lectus magna fringilla urna porttitor rhoncus.
-                    </article>
-                </div>
-            </div>
-            <footer>
-                <img class="max-width" src="assets/img/headline-footer.png"/>
-            </footer>
-        </div>
+<section class="contact">
+    <div class="contact__form">
+        <form action="/action_page.php">
+            <span class="heading">Kontakt</span>
+            <span class="sub-heading">formular</span>
+            <input name="name" type="text" placeholder="Name*">
+            <input name="email" type="email" placeholder="Email*">
+            <textarea rows="4" cols="50" placeholder="Nachricht*"></textarea>
+            <input class="btn-submit" type="submit" value="Absenden">
+        </form>
     </div>
-</section> <section id="teams" class="teams">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 no-padding">
-                <header>
-                    <h1>UNSER TEAM</h1>
-                    <h4>Subtitle von unserem team</h4>
-                </header>
-            </div>
-        </div>
-        <div class="container-fluid no-padding">
-          <div class="row">
-            <div class="col-md-12 box-wrapper no-padding">
-                <div class="item-list">
-                  <ul>
-                    <li>
-                        <img class="max-width" src="assets/img/team-member-1.png"/>
-                        <div class="user-details">
-                            <h2>Max Mustermann</h2>
-                            <p>A smooth sea never made a skilled sailor</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="max-width" src="assets/img/team-member-1.png"/>
-                        <div class="user-details">
-                            <h2>Max Mustermann</h2>
-                            <p>A smooth sea never made a skilled sailor</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="max-width" src="assets/img/team-member-1.png"/>
-                        <div class="user-details">
-                            <h2>Max Mustermann</h2>
-                            <p>A smooth sea never made a skilled sailor</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="max-width" src="assets/img/team-member-1.png"/>
-                        <div class="user-details">
-                            <h2>Max Mustermann</h2>
-                            <p>A smooth sea never made a skilled sailor</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="max-width" src="assets/img/team-member-1.png"/>
-                        <div class="user-details">
-                            <h2>Max Mustermann</h2>
-                            <p>A smooth sea never made a skilled sailor</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="max-width" src="assets/img/team-member-1.png"/>
-                        <div class="user-details">
-                            <h2>Max Mustermann</h2>
-                            <p>A smooth sea never made a skilled sailor</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="max-width" src="assets/img/team-member-1.png"/>
-                        <div class="user-details">
-                            <h2>Max Mustermann</h2>
-                            <p>A smooth sea never made a skilled sailor</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="max-width" src="assets/img/team-member-1.png"/>
-                        <div class="user-details">
-                            <h2>Max Mustermann</h2>
-                            <p>A smooth sea never made a skilled sailor</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="max-width" src="assets/img/team-member-1.png"/>
-                        <div class="user-details">
-                            <h2>Max Mustermann</h2>
-                            <p>A smooth sea never made a skilled sailor</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="max-width" src="assets/img/team-member-1.png"/>
-                        <div class="user-details">
-                            <h2>Max Mustermann</h2>
-                            <p>A smooth sea never made a skilled sailor</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="max-width" src="assets/img/team-member-1.png"/>
-                        <div class="user-details">
-                            <h2>Max Mustermann</h2>
-                            <p>A smooth sea never made a skilled sailor</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="max-width" src="assets/img/team-member-1.png"/>
-                        <div class="user-details">
-                            <h2>Max Mustermann</h2>
-                            <p>A smooth sea never made a skilled sailor</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="max-width" src="assets/img/team-member-1.png"/>
-                        <div class="user-details">
-                            <h2>Max Mustermann</h2>
-                            <p>A smooth sea never made a skilled sailor</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="max-width" src="assets/img/team-member-1.png"/>
-                        <div class="user-details">
-                            <h2>Max Mustermann</h2>
-                            <p>A smooth sea never made a skilled sailor</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img class="max-width" src="assets/img/team-member-1.png"/>
-                        <div class="user-details">
-                            <h2>Max Mustermann</h2>
-                            <p>A smooth sea never made a skilled sailor</p>
-                        </div>
-                    </li>
-                  </ul>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 no-padding">
-                
-            </div>
-        </div>
+    <div class="contact__sponsor">
+        <span>sponsor 1 <br> logo</span>
+        <span>sponsor 2 <br> logo</span>
+        <span>sponsor 3 <br> logo</span>
+        <span>sponsor 4 <br> logo</span>
     </div>
-</section> <section id="form-sponsor" class="formsponsor">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 no-padding formsponsor--wrapper">
-                <div class="col-md-6 form-div-wrapper no-padding">
-                    <form class="form-wrapper" action="#">
-                        <h2>Kontackt</h2>
-                        <h3>formular</h3>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="email" placeholder="Email*" name="email">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Nachrichi*" rows="4">
-                                
-                            </textarea>
-                        </div>
-                        <button>ABSENDEN</button>
-                    </form>
-                </div>
-                <div class="col-md-6 sponsor--wrapper no-padding">
-                    <div class="col-md-6 sponsor--item">
-                        <h2>Sponsor1<br>Logo</h2>
-                    </div>
-                    <div class="col-md-6 sponsor--item">
-                            <h2>Sponsor2<br>Logo</h2>
-                    </div>
-                    <div class="col-md-6 sponsor--item">
-                            <h2>Sponsor3<br>Logo</h2>
-                    </div>
-                    <div class="col-md-6 sponsor--item">
-                            <h2>Sponsor4<br>Logo</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> <footer class="footer">
-    <div class="container footer--wrapper no-padding">
-        <span class="footer--copyrights">
-            &copy; 2014. Segel-Team. Alle Rechete verbehalten
-        </span>
-        <span class="footer--socialicon">
-            <img src="assets/img/twitter.png"/>
-            <img src="assets/img/facebook.png"/>
-        </span>
-        <span>
-            <ul>
-                <li>Impressum</li>
-                <li>Datenschutz</li>
-                <li>Rechtliches</li>
-                <li>Copyrights</li>
-            </ul>
-        </span>
-    </div>
+</section>
+
+<!-- End of Contact and sponsor
+==================================== --> <!-- Footer
+==================================== -->
+<footer>
+    <p>&copy; 2014 Segel-Team. Alle Rechte vorbe</p>
+    <span><span class="icon icon-calendar"></span><span class="icon icon-calendar"></span></span>
+    <nav aria-label="site">
+        <a class="footer-nav" href="#" >Impressum</a>
+        <a class="footer-nav" href="#" >Datenschutz</a>
+        <a class="footer-nav" href="#" >Copyright</a>
+        <a class="footer-nav" href="#" >Copyright</a>
+    </nav>
 </footer>
-    </section>
-    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script-->
-    <script src="assets/js/main.js" type="text/javascript"></script>
+
+<!-- End of Footer
+==================================== -->
+    </div>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

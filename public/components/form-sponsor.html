@@ -1,40 +1,24 @@
-<section id="form-sponsor" class="formsponsor">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 no-padding formsponsor--wrapper">
-                <div class="col-md-6 form-div-wrapper no-padding">
-                    <form class="form-wrapper" action="#">
-                        <h2>Kontackt</h2>
-                        <h3>formular</h3>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="email" placeholder="Email*" name="email">
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Nachrichi*" rows="4">
+<!-- Contact and sponsor
+==================================== -->
 
-                            </textarea>
-                        </div>
-                        <button>ABSENDEN</button>
-                    </form>
-                </div>
-                <div class="col-md-6 sponsor--wrapper no-padding">
-                    <div class="col-md-6 sponsor--item">
-                        <h2>Sponsor1<br>Logo</h2>
-                    </div>
-                    <div class="col-md-6 sponsor--item">
-                        <h2>Sponsor2<br>Logo</h2>
-                    </div>
-                    <div class="col-md-6 sponsor--item">
-                        <h2>Sponsor3<br>Logo</h2>
-                    </div>
-                    <div class="col-md-6 sponsor--item">
-                        <h2>Sponsor4<br>Logo</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section class="contact">
+    <div class="contact__form">
+        <form action="/action_page.php">
+            <span class="heading">Kontakt</span>
+            <span class="sub-heading">formular</span>
+            <input name="name" type="text" placeholder="Name*">
+            <input name="email" type="email" placeholder="Email*">
+            <textarea rows="4" cols="50" placeholder="Nachricht*"></textarea>
+            <input class="btn-submit" type="submit" value="Absenden">
+        </form>
+    </div>
+    <div class="contact__sponsor">
+        <span>sponsor 1 <br> logo</span>
+        <span>sponsor 2 <br> logo</span>
+        <span>sponsor 3 <br> logo</span>
+        <span>sponsor 4 <br> logo</span>
     </div>
 </section>
+
+<!-- End of Contact and sponsor
+==================================== -->

@@ -1,0 +1,244 @@
+/** @author Senthil Kumar Mukkandi <uv.visitsenthil@gmail.com> */
+
+ /* Start of Destkop Media Query*/
+@media only screen and (max-width: 1200px) {
+    .banner{
+        .banner__content{
+            width: 50%;
+        }
+    }
+    .contact {
+        min-height: 400px;
+        .contact__form{
+            padding: 24px;
+        }
+        .contact__sponsor{
+            align-items: center;
+            padding: 24px;
+            span{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+/* Start of Destkop Media Query*/
+@media only screen and (max-width: 992px) {
+    h2{
+        font-size: 2.8rem;
+    }
+    h3 {
+        font-size: 2.0rem;
+    }
+    h4 {
+        font-size: 1.8rem;
+    }
+    .banner{
+        .banner__content{
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background: rgba(255,255,255,0.8);
+            padding: 16px;
+            h1{
+                font-size: 2.8rem;
+            }
+            p{
+                font-size: 1.4rem;
+            }
+        }
+    }
+   .block2{
+        .block2__top{
+            min-height: 200px;
+            .hc__wrapper{
+                padding: 0 0 24px 24px;
+                p{
+                    width: 100%;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+   }
+   .block3{
+        min-height: 180px;
+        .center-text{
+            .icon{
+                font-size: 3rem;
+                line-height: 1.5;
+            }
+            .center-text__heading{
+                font-size: 1.6rem;
+                line-height: 1.5;
+            }
+        }
+    }
+    .team{
+        ul{
+            li{
+                width: calc(100%/4);
+            }
+        }
+    }
+    
+    article{
+        padding: 40px 0 0;
+        .content__column{
+            padding: 20px;
+            grid-template-columns: 100%;
+            grid-template-rows: auto auto;
+            .column1,.column2{
+                padding: 0
+            }
+        }
+    }
+}
+/* End of Destkop Media Query*/
+
+/* Start of Tablet Media Query */
+
+@media only screen and (max-width: 768px) {
+    .wrapper__mobile-menu {
+        height: 100vh;
+        overflow: hidden;
+        header{
+            height: auto;
+        }
+    }
+    header{
+        background-color: $red;
+        .header__mobile{
+            display: grid;
+            height: calc(100vh - 80px);
+            background: #fff;
+            grid-column-start: 1;
+            grid-row-start: 2;
+            grid-column-end: 3;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            .nav__link{
+                padding:0;
+            }
+        }
+        .header__image{
+            height: 80px;
+        }
+        .header__toggle{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            cursor: pointer;
+            padding-left: 1.6rem;
+            .bar{
+                background-color: $white;
+            }
+        }
+        nav{
+            display: none;
+            align-self: center;
+        }
+        .header__mobile{
+            display: grid;
+            height: calc(100vh - 60px);
+            position: relative;
+            z-index: 2;
+            background: #fff;
+            grid-column-start: 1;
+            grid-row-start: 2;
+            grid-column-end: 3;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .block1{
+        grid-template-columns: 100%;
+        grid-template-rows: 260px auto;
+    }
+    .team{
+        ul{
+            li{
+                width: calc(100%/3);
+            }
+        }
+    }
+    .contact{
+        grid-template-columns: 100%;
+        clip-path:  none;
+        .contact__form,.contact__sponsor{
+            padding: 24px;
+        }
+        .contact__sponsor{
+            span{
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+        }
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        p{
+            margin-bottom: 8px;
+        }
+        span{
+            margin-bottom: 8px;
+            margin-left: 0;
+            .icon{
+                margin: 0 8px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .banner{
+        .banner__content{
+            width: 100%;
+            h1{
+                font-size: 2.2rem;
+            }
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .block1{
+        grid-template-rows: 340px auto;
+    }
+    .block2{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        .block2__top{
+            min-height: 280px;
+            background-position: center;
+            .hc__wrapper{
+                padding: 48px 0 48px 48px;
+            }
+        }
+    }
+    .block3{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+    }
+    .team{
+        ul{
+            li{
+                width: calc(100%/2);
+            }
+        }
+    }
+}
+
+/* End of Tablet Media Query */
+
+@media only screen and (max-width: 420px) {
+    article{
+        footer{
+            top: -40px;
+        }
+    }
+    .team{
+        margin-top: -41px;
+    }
+}

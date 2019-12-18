@@ -1,11 +1,13 @@
-@import '_normalize.scss';
-@import '_global.scss';
-@import '_grid.scss';
-@import './component/navigation.scss';
-@import './component/banner.scss';
-@import './component/news.scss';
-@import './component/article.scss';
-@import './component/team.scss';
-@import './component/form-sponsor.scss';
-@import './component/footer.scss';
+@import '_reset.scss';
+@import './base/_variables.scss';
+@import './base/_common.scss';
+@import './modules/common-modules.scss';
+@import './component/_navigation.scss';
+@import './component/_banner.scss';
+@import './component/_news.scss';
+@import './component/_article.scss';
+@import './component/_team.scss';
+@import './component/_form-sponsor.scss';
+@import './component/_footer.scss';
+@import './layout/media-query.scss';
 

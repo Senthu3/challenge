@@ -1,0 +1,55 @@
+/* Start of Header */
+header{
+  height: 80px;
+  background-color: $white;
+  display: grid;
+  grid-area: header;
+  grid-template-columns: auto auto;
+  .header__toggle{
+      display: none;
+      .bar{
+          width: 40px;
+          height: 3px;
+          background-color: #3f3f3f;
+          margin: 5px auto;
+          -webkit-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+      }
+  }
+  .header__image{
+      display: flex;
+      align-items: center;
+      padding-right: 2rem;
+      margin-left: auto;
+      background-color: $red;
+      padding: 0 5rem 0 14rem;
+  }
+  header nav{
+      align-self: center;
+  }
+  
+  header nav a{
+      font-size: 1.8rem;
+      padding-left: 20px;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  nav{
+      padding: 0 0 0 44px;    
+      display: flex;
+      align-items: center;
+  }
+  .nav__link{
+      font-size: 1.6rem;
+      text-decoration: none;
+      padding-right: 24px;
+      font-weight: bold;
+      color: $black;
+      transition: color 0.5s;
+      &:hover{
+          color: $red;
+      }
+  }
+}
+/* End of Header */

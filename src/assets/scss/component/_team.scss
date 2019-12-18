@@ -1,0 +1,63 @@
+.team{
+    background: $black;
+    color: $white;
+    text-align: center;
+    position: relative;
+    margin-top: -80px;
+    padding-top: 76px;
+    hr{
+        margin-top: 16px;
+        width: 25%;
+    }
+    ul{
+        display: flex;
+        padding-top: 64px;
+        flex-flow: row wrap;
+        li{
+            list-style: none;
+            position: relative;
+            display: flex;
+            width: calc(100%/5);
+            .imageOverlay{
+                -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+                filter: grayscale(100%);
+            }
+        }
+        .user-details{
+            display: flex;
+            background:$lighter-grey;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0 0 24px 24px;
+            justify-content: flex-end;
+            flex-direction: column;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s, transform 0.5s linear;
+            color: $black;
+            &.show{
+                visibility: visible;
+                transform: translateX(100%);
+                opacity: 1;
+                height: 100%;
+                z-index: 1;
+            }
+            &.last{
+                transform: translateX(-100%);
+            }
+            h2{
+                display: block;
+                width: 100%;
+                font-size: 1.8rem;
+                text-align: left;
+            }
+            p{
+                font-size: 15px;
+                line-height: 22px;
+                width: 60%;
+                text-align: left;
+            }
+        } 
+    }
+}
